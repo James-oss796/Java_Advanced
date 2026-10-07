@@ -1,0 +1,21 @@
+stream - brings functional programming interface to you java code.
+stream source - can be created from collections, lists, sets, ints, longs, doubles, 
+stream operations - intermediate operation and terminal operation
+
+intermediate operations - zero or more are allowed, order matters, filter first, then sort or map.
+                        - for large datasets use parallel stream to enable multiple threads.
+                        -anyMatch()
+                        -distinct()
+                        -filter()
+                        -findFirst()
+                        -flatMap()
+                        -map()
+                        -skip()
+                        -sorted()
+
+terminal operations - one termainal operation is allowed
+                    - forEach applies same function to each element
+                    - collect saves the elements into a collection
+                    - other options reduce the stream into a single summary element -count() -max() -min() reduce() summmaryStatistics()
+
+
