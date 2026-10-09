@@ -2,6 +2,8 @@
 package Threads;
 import java.util.Scanner;
 
+import concurrency.MyThread;
+
 
 public class Main{
     public static void main(String[] args){
@@ -17,5 +19,8 @@ public class Main{
         String name = scanner.nextLine();
         System.out.println("Hello " + name);
         scanner.close();
+
+        MyThread thread = new MyThread();
+        thread.start();
     }
 }
